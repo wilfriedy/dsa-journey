@@ -15,11 +15,11 @@ def orderEvenFirst(array):
 def orderEvenFirst2(array):
     start, end = 0, 0
     while start < len(array):
-        if (not array[start] % 2):
+        if not array[start] % 2:
             array[start], array[end] = array[end], array[start]
             end += 1
         start += 1
-    return  array
+    return array
 
 
 print(orderEvenFirst2([2,5,6,7,3,4]))
